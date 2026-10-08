@@ -1,0 +1,61 @@
+#statusline .sl-plugin[data-plugin='strata-server'][data-tone='ok'] {
+	color: var(--ok);
+}
+
+#statusline .sl-plugin[data-plugin='strata-server'][data-tone='warn'] {
+	color: var(--warn);
+}
+
+#statusline .sl-plugin[data-plugin='strata-server'][data-tone='error'] {
+	color: var(--bad);
+}
+
+.sf-main[data-surface='plugin.strata-server.panel'] {
+	padding: 8px 10px 12px;
+}
+
+.sf-main[data-surface='plugin.strata-server.panel'] [data-role='strata.hero'] {
+	min-width: 0;
+}
+
+.sf-main[data-surface='plugin.strata-server.panel'] [data-role='strata.controls'],
+.sf-dock[data-surface='plugin.strata-server.panel'] [data-role='strata.controls'] {
+	gap: 8px;
+	flex-wrap: wrap;
+}
+
+.sf-main[data-surface='plugin.strata-server.panel'] .strata-btn,
+.sf-dock[data-surface='plugin.strata-server.panel'] .strata-btn {
+	padding: 5px 14px;
+	border-radius: 6px;
+	border: 1px solid var(--border, var(--t4));
+	background: transparent;
+	color: var(--t1);
+	cursor: pointer;
+	font: inherit;
+}
+
+.sf-main[data-surface='plugin.strata-server.panel'] .strata-btn.go,
+.sf-dock[data-surface='plugin.strata-server.panel'] .strata-btn.go {
+	border-color: var(--ok);
+	background: var(--ok);
+	color: var(--bg, #111);
+}
+
+.sf-main[data-surface='plugin.strata-server.panel'] .strata-btn.stop,
+.sf-dock[data-surface='plugin.strata-server.panel'] .strata-btn.stop {
+	border-color: var(--bad);
+	color: var(--bad);
+}
+
+.sf-main[data-surface='plugin.strata-server.panel'] .strata-btn.muted,
+.sf-dock[data-surface='plugin.strata-server.panel'] .strata-btn.muted {
+	opacity: 0.45;
+	pointer-events: none;
+}
+
+.sf-main[data-surface='plugin.strata-server.panel'] [data-role='strata.log'] {
+	color: var(--t3);
+	max-height: 12em;
+	overflow: auto;
+}

@@ -1,0 +1,13 @@
+schema = 1
+id = "strata-server"
+name = "Strata Server"
+version = "0.2.1"
+description = "Start, stop, and watch any Strata (or compatible) local model server."
+icon = "cpu"
+host = "host.luau"
+window = "window.luau"
+styles = ["panel.css"]
+
+[[blocks]]
+id = "panel"
+title = "Strata Server"

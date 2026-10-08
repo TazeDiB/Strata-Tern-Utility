@@ -1,0 +1,22 @@
+{
+  "poll_ms": 2000,
+  "selected": "flash-abliterated",
+  "servers": [
+    {
+      "id": "flash-abliterated",
+      "name": "Flash Next (abliterated)",
+      "base_url": "http://127.0.0.1:8080",
+      "api_key": "",
+      "cwd": "C:\\Users\\lalal\\OneDrive\\Desktop\\flash-serve\\flash-serve",
+      "start": [
+        "cmd.exe",
+        "/c",
+        "start",
+        "/min",
+        "C:\\Users\\lalal\\OneDrive\\Desktop\\flash-serve\\flash-serve\\start-flash-uncensored.bat"
+      ],
+      "kill": ["strata.exe", "strata-vision.exe", "llama-server.exe"],
+      "kill_port": 8080
+    }
+  ]
+}
